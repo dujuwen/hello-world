@@ -1,0 +1,87 @@
+man giteveryday
+
+Git users can broadly be grouped into four categories for the purposes of describing here a small set of useful command for everyday Git.
+
+       o   Individual Developer (Standalone) commands are essential for anybody who makes a commit, even for somebody who works alone.
+
+       o   If you work with other people, you will need commands listed in the Individual Developer (Participant) section as well.
+
+       o   People who play the Integrator role need to learn some more commands in addition to the above.
+
+       o   Repository Administration commands are for system administrators who are responsible for the care and feeding of Git repositories.
+
+INDIVIDUAL DEVELOPER (STANDALONE)
+       A standalone individual developer does not exchange patches with other people, and works alone in a single repository, using the following commands.
+
+       o   git-init(1) to create a new repository.
+
+       o   git-log(1) to see what happened.
+
+       o   git-checkout(1) and git-branch(1) to switch branches.
+
+       o   git-add(1) to manage the index file.
+
+       o   git-diff(1) and git-status(1) to see what you are in the middle of doing.
+
+       o   git-commit(1) to advance the current branch.
+
+       o   git-reset(1) and git-checkout(1) (with pathname parameters) to undo changes.
+
+       o   git-merge(1) to merge between local branches.
+
+       o   git-rebase(1) to maintain topic branches.
+
+       o   git-tag(1) to mark a known point.
+
+
+INDIVIDUAL DEVELOPER (PARTICIPANT)
+       A developer working as a participant in a group project needs to learn how to communicate with others, and uses these commands in addition to the ones needed by a standalone
+       developer.
+
+       o   git-clone(1) from the upstream to prime your local repository.
+
+       o   git-pull(1) and git-fetch(1) from "origin" to keep up-to-date with the upstream.
+
+       o   git-push(1) to shared repository, if you adopt CVS style shared repository workflow.
+
+       o   git-format-patch(1) to prepare e-mail submission, if you adopt Linux kernel-style public forum workflow.
+
+       o   git-send-email(1) to send your e-mail submission without corruption by your MUA.
+
+       o   git-request-pull(1) to create a summary of changes for your upstream to pull.
+
+
+INTEGRATOR
+       A fairly central person acting as the integrator in a group project receives changes made by others, reviews and integrates them and publishes the result for others to use,
+       using these commands in addition to the ones needed by participants.
+
+       This section can also be used by those who respond to git request-pull or pull-request on GitHub (www.github.com) to integrate the work of others into their history. An
+       sub-area lieutenant for a repository will act both as a participant and as an integrator.
+
+       o   git-am(1) to apply patches e-mailed in from your contributors.
+
+       o   git-pull(1) to merge from your trusted lieutenants.
+
+       o   git-format-patch(1) to prepare and send suggested alternative to contributors.
+
+       o   git-revert(1) to undo botched commits.
+
+       o   git-push(1) to publish the bleeding edge.
+
+
+REPOSITORY ADMINISTRATION
+       A repository administrator uses the following tools to set up and maintain access to the repository by developers.
+
+       o   git-daemon(1) to allow anonymous download from repository.
+
+       o   git-shell(1) can be used as a restricted login shell for shared central repository users.
+
+       o   git-http-backend(1) provides a server side implementation of Git-over-HTTP ("Smart http") allowing both fetch and push services.
+
+       o   gitweb(1) provides a web front-end to Git repositories, which can be set-up using the git-instaweb(1) script.
+
+       update hook howto[1] has a good example of managing a shared central repository.
+
+       In addition there are a number of other widely deployed hosting, browsing and reviewing solutions such as:
+
+       o   gitolite, gerrit code review, cgit and others.
