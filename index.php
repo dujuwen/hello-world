@@ -5,5 +5,5 @@ function test() {
 }
 
 function function_name() {
-    ;
+    echo("2222");
 }
