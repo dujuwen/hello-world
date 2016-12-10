@@ -5,5 +5,5 @@ function test() {
 }
 
 function function_name() {
-    ;
+    var_dump(2222);
 }
