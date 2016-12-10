@@ -1,5 +1,9 @@
 <?php
 
-echo '呜呜呜';
+function test() {
+    echo '测试文件首页';
+}
 
-echo '倍爽';
+function function_name($param) {
+    ;
+}
