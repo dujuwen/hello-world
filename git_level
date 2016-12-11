@@ -68,20 +68,3 @@ INTEGRATOR
 
        o   git-push(1) to publish the bleeding edge.
 
-
-REPOSITORY ADMINISTRATION
-       A repository administrator uses the following tools to set up and maintain access to the repository by developers.
-
-       o   git-daemon(1) to allow anonymous download from repository.
-
-       o   git-shell(1) can be used as a restricted login shell for shared central repository users.
-
-       o   git-http-backend(1) provides a server side implementation of Git-over-HTTP ("Smart http") allowing both fetch and push services.
-
-       o   gitweb(1) provides a web front-end to Git repositories, which can be set-up using the git-instaweb(1) script.
-
-       update hook howto[1] has a good example of managing a shared central repository.
-
-       In addition there are a number of other widely deployed hosting, browsing and reviewing solutions such as:
-
-       o   gitolite, gerrit code review, cgit and others.
