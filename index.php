@@ -7,3 +7,6 @@ function test() {
 function wowow() {
     echo date('Y-m-d H:i:s');
 }
+function function_name() {
+    echo("2222");
+}
