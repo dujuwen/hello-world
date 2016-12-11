@@ -5,3 +5,7 @@ function test() {
 }
 
 const NAME = 'djw';
+
+function wowow() {
+    echo date('Y-m-d H:i:s');
+}
