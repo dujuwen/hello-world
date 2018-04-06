@@ -1,3 +1,4 @@
 #忽略编辑器产生的文件
 .project
 *~
+test.log
